@@ -1,0 +1,471 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!--{{{-->
+  <meta charset="utf-8">
+
+  <title>Ionic In Enterprise</title>
+
+  <meta name="description" content="A overview of Ionic 2">
+  <meta name="author" content="Dan Bucholtz - forked from Adam Bradley">
+
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/ionic.css" id="theme">
+
+  <!-- Code syntax highlighting -->
+  <link rel="stylesheet" href="lib/css/oceanicnext.css">
+
+  <!-- icons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Printing and PDF exports -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>
+    var link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+    document.getElementsByTagName('head')[0].appendChild(link);
+  </script>
+
+  <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<!--}}}-->
+
+<body>
+
+  <div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+
+      <!-- intro -->
+      <section>
+        <img src="img/ionic-sdk-landscape-white-1024.png" class="logo" width="550" style="display:block; margin:auto; margin-bottom:100px;">
+        <h1 style="font-size:55px">Ionic - The best way to build apps</h1>
+        <p>Dan Bucholtz | <a href="https://twitter.com/danbucholtz">@danbucholtz</a></p>
+      </section>
+
+      <section>
+        <p><b>Who am I</b></p>
+        <p>I'm Dan Bucholtz</p>
+        <p>Software engineer for Ionic</p>
+        <p>@danbucholtz on twitter, github</p>
+      </section>
+
+      <section>
+        <p><b>Prior to Ionic</b></p>
+        <p>Brady Corporation, 7Summits</p>
+        <p>Tech lead of mobile group at Brady</p>
+        <p>Unhappy w/ Xamarin, we tried Ionic and <3</p>
+      </section>
+
+      <section>
+        <p><b>What is Ionic?</b></p>
+        <p>Ionic is an ecosystem of tools to build cross-platform mobile apps using web technologies</p>
+      </section>
+
+      <section>
+        <p><b>HTML, CSS, JS</b></p>
+      </section>
+
+      <section>
+        <p><b>UI Controls built for mobile that look and feel great</b></p>
+      </section>
+
+      <section>
+        <p><b>Time for a history lesson</b></p>
+      </section>
+
+      <section>
+        <p><b>What is Ionic?</b></p>
+        <p>Ionic was created back in the olden days</p>
+      </section>
+
+      <section>
+          <p><b>2013</b></p>
+      </section>
+
+      <section>
+        <p>The web moves fast!</p>
+      </section>
+
+      <section>
+        <p><b>What is Ionic?</b></p>
+        <p>Kind of took the world by storm</p>
+        <p>Piggy-backed on Angular 1's popularity, grew to stand on it's own</p>
+      </section>
+
+      <section>
+        <p><b>What is Ionic?</b></p>
+        <p>Web Developers had a new tool in their belt</p>
+        <p>Put that iPhone to use!</p>
+        <p>The barrier to entry for mobile apps shrank</p>
+      </section>
+
+      <section>
+        <p><b>What is Ionic?</b></p>
+        <p>Became popular because it was easy!</p>
+        <p>Install to hello world in 2 minutes</p>
+        <p>Could develop in browser, deploy to phone</p>
+        <p>Didn't need to learn new mobile toolset, etc</p>
+      </section>
+
+      <section>
+        <p><b>ionic start</b></p>
+      </section>
+
+      <section>
+        <p><b>ionic serve</b></p>
+      </section>
+
+      <section>
+        <p><b>ionic run</b></p>
+      </section>
+
+      <section>
+        <p><b>What is Ionic?</b></p>
+        <p>100% free and open-source, forever</p>
+        <p>HUGE, awesome community!!</p>
+        <p>Large ecosystem of services to support indie apps to fortune 100 companies</p>
+      </section>
+
+       <section>
+        <p><b>The Stats</b></p>
+        <p>28K stars on Github</p>
+        <p>Top 30-40 most popular projects</p>
+        <p>~3 Million Ionic apps built</p>
+      </section>
+
+      <section>
+        <p><b>Who builds it?</b></p>
+      </section>
+
+      <section>
+        <p><b>The Team</b></p>
+        <p>Ionic is a team of 30ish in Madison, WI</p>
+        <p>Founded in 2012</p>
+        <p>We're well funded financially and will be around for many years to come</p>
+      </section>
+
+
+      <section>
+        <p><b>A lot has changed since 2013</b></p>
+      </section>
+
+      <section>
+        <p><b>What's changed??</b></p>
+      </section>
+
+      <section>
+        <p><b>What's changed??</b></p>
+        <p>Pretty much everything</p>
+      </section>
+
+      <section>
+        <p><b>Approximately 7,000,000 new tools</b></p>
+        <p>Too complicated</p>
+      </section>
+
+      <section>
+        <p><b>What's changed??</b></p>
+        <p>Here are the big ones</p>
+      </section>
+
+      <section>
+        <p><b>Modular code with ES2015 modules and classes</b></p>
+      </section>
+
+      <section>
+        <p><b>Better async story with Promises and Observables</b></p>
+      </section>
+
+      <section>
+        <p><b>NPM blew up and became gigantic</b></p>
+      </section>
+
+      <section>
+        <p><b>Most importantly...</b></p>
+      </section>
+
+      <section>
+        <p><b>Angular 2</b></p>
+      </section>
+
+      <section>
+        <p><b>All of these changes required a fresh start</b></p>
+      </section>
+
+      <section>
+        <p><b>Ionic 2 was a ground-up rebuild of Ionic</b></p>
+        <p>Feels like Ionic, but better/simpler in every way</p>
+      </section>
+
+      <section>
+        <p><b>Sidebar: It's just Ionic</b></p>
+        <p>Ionic 3 is coming out soon, and 4, 5, 6, etc</p>
+      </section>
+
+      <section>
+        <p><b>What's new in Ionic</b></p>
+        <p>First class mobile apps</p>
+      </section>
+
+      <section>
+        <p><b>What's new in Ionic</b></p>
+        <p>First class mobile apps</p>
+        <p>"Native" Desktop Apps (Electron)</p>
+        <P>Progressive Web Apps</p>
+      </section>
+
+      <section>
+        <p><b>Write one app, deploy to any device/screen</b></p>
+        <p>Looks great on every screen due to automatic platform continuity</p>
+      </section>
+
+      <section>
+        <img src="img/conference.jpg"/>
+      </section>
+
+      <section>
+        <p><b>What's new in Ionic</b></p>
+        <p>Write apps in TypeScript</p>
+        <p>TS is amazing. You will love it.</p>
+        <p>VS Code = the bees knees</p>
+      </section>
+
+      <section>
+        <p><b>What's new in Ionic</b></p>
+        <p>No more complicated routing system</p>
+        <p>Routers are always complicated</p>
+        <p>Hard to get set-up and get started</p>
+        <p>The bane of our existance on Github</p>
+      </section>
+
+      <section>
+        <p><b>What's new in Ionic</b></p>
+        <p>Push and Pop Navigation</p>
+        <p>Designed to mimick Cocoa Touch's Nav System</p>
+        <p>URL still a first class citizen</p>
+        <p>Add "deep linking" to app later</p>
+      </section>
+
+      <section>
+        <p><b>What's new in Ionic</b></p>
+        <p>60 FPS - all the time</p>
+        <p>Ionic 1 could feel slower on old devices</p>
+        <p>Ionic 2 is incredibly fast</p>
+      </section>
+
+      <section>
+        <p><b>What's new in Ionic</b></p>
+        <p>New components, improvements to old components</p>
+        <p>Better UIPicker equivalent</p>
+        <p>Hugely improved select control</p>
+      </section>
+
+      <section>
+        <p><b>What's new in Ionic</b></p>
+        <p>Basically, anything that wasn't great about Ionic 1 is better in Ionic 2</p>
+      </section>
+
+      <section>
+        <p><b>What has Ionic always had</b></p>
+      </section>
+
+      <section>
+        <p><b>Batteries Included</b></p>
+        <p>Tons of mobile-first UI Controls</p>
+        <p>Dependency Injection / Testing</p>
+        <p>Persistence, Navigation, Deep Linking, etc</p>
+        <p><b>Everything one would expect for serious app development</b></p>
+      </section>
+
+      <section>
+        <p><b>Native Functionality</b></p>
+        <p>Access camera, file system, gps, etc</p>
+        <p>Use <b>Cordova</b> or <b>Electron</b></p>
+        <p>"Ionic Native" makes it easy</p>
+      </section>
+
+      <section>
+        <p><b>Developer Experience</b></p>
+        <p>People love working with Ionic</p>
+        <p>Really cool to hear - "all the feels"</p>
+        <p>We're so thrilled and humbled by this</p>
+      </section>
+
+      <section>
+        <p><b>Something I hear a lot</b></p>
+      </section>
+
+      <section>
+        <p><b>"So it's like Bootstrap?"</b></p>
+      </section>
+
+      <section>
+        <p><b>"So it's like Bootstrap?"</b></p>
+        <p>In many ways, yes. But there's WAY more to it</p>
+        <p>It's a fully-featured, batteries included framework</p>
+      </section>
+
+      <section>
+        <p><b>The hard truth</b></p>
+        <p>Many built-in HTML controls suck on mobile</p>
+        <p>Can't be updated either due to backwards compatibility</p>
+        <p>We make them awesome and user friendly</p>
+      </section>
+
+      <section>
+        <p><b>Bootstrap is the de facto standard for web sites</b></p>
+      </section>
+
+      <section>
+        <p><b>We want to make Ionic the de facto standard for web apps</b></p>
+      </section>
+
+      <section>
+        <p><b>Let's build an app, shall we?</b></p>
+      </section>
+
+      <section>
+        <p>ionic start myApp blank --v2</p>
+        <p>cd myApp</p>
+        <p>ionic serve</p>
+      </section>
+
+      <section>
+        <p><b>The world is our oyster</b></p>
+      </section>
+
+      <section>
+        <img src="img/empty-component.png" style="height: 650px;">
+      </section>
+
+      <section>
+        <p><b>A few things jump out</b></p>
+        <p>Custom element (ish) tags</p>
+        <p>ion-header, ion-content</p>
+        <p>Empty class</p>
+      </section>
+
+      <section>
+        <p><b>Let's add some data</b></p>
+        <p>Add a "provider" in Angular land</p>
+      </section>
+
+      <section>
+        <p>Look at the provider instead of this slide</p>
+      </section>
+
+      <section>
+        <p><b>Provider details</b></p>
+        <p>Returningnot just a list, but a <b>list of emails</b></p>
+        <p>The compiler will <b>optionally</b> validate types</p>
+        <p>Injected into the component instance</p>
+      </section>
+
+      <section>
+        <p><b>Basic List</b></p>
+        <p>Note ngFor, etc</p>
+        <p>Let's make it pretty</p>
+      </section>
+
+      <section>
+        <p><b>Styled List</b></p>
+        <p>Ionic makes it super easy for things to look great!</p>
+        <p>I'm not a designer, so I love this</p>
+      </section>
+
+      <section>
+        <p><b>Slide out list</b></p>
+        <p>Very little code to accomplish this!</p>
+      </section>
+
+    </div>
+
+  </div>
+
+  <script src="lib/js/head.min.js"></script>
+  <script src="js/reveal.js"></script>
+  <script>
+    // Full list of configuration options available at:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+      slideNumber: true,
+      controls: true,
+      progress: true,
+      history: true,
+      center: true,
+      maxScale: 1,
+      minScale: 1,
+
+      transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+      // Optional reveal.js plugins
+      dependencies: [{
+        src: 'lib/js/classList.js',
+        condition: function() {
+          return !document.body.classList;
+        }
+      }, {
+        src: 'plugin/markdown/marked.js',
+        condition: function() {
+          return !!document.querySelector('[data-markdown]');
+        }
+      }, {
+        src: 'plugin/markdown/markdown.js',
+        condition: function() {
+          return !!document.querySelector('[data-markdown]');
+        }
+      }, {
+        src: 'plugin/highlight/highlight.js',
+        async: true,
+        condition: function() {
+          return !!document.querySelector('pre code');
+        },
+        callback: function() {
+          hljs.initHighlightingOnLoad();
+        }
+      }, {
+        src: 'plugin/zoom-js/zoom.js',
+        async: true
+      }, {
+        src: 'plugin/notes/notes.js',
+        async: true
+      }]
+    });
+  </script>
+
+  <script>
+    function togglePlatform(target, version, platform) {
+      console.log(target, version, platform)
+      var demoTarget = $('#' + target + ' > div');
+      var demoFrame = $('#' + target + ' > div > iframe');
+      var currentSrc = demoFrame.attr('src');
+      var newSrc = currentSrc.split('?')[0] + '?ionicplatform=';
+      var currentPlatform = getPlatform(currentSrc);
+      demoFrame.attr('src', newSrc + platform);
+      console.log(demoTarget)
+      demoTarget.attr('class', version);
+      // demoTarget.addClass(version);
+    }
+
+    function getPlatform(iframeSrc) {
+      // return: 'ios' or android
+      if (iframeSrc.indexOf('android') > -1) {
+        return 'android';
+      }
+      return 'ios';
+    }
+  </script>
+</body>
+
+</html>
